@@ -1,0 +1,167 @@
+
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#12a35f;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {    
+    /*Degradado*/
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /*alto total de la pantalla*/
+    display: flex;
+    align-items: center; /*display align-items y justify-content => centran el contenido*/
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;    
+    width: 100%; /*estirarse todo lo que pueda sin romper los limites*/
+    height: 80vh;
+    background-color: white;    
+    border-radius: 4px;
+    /*box-shadow: diferencia_horizontal, diferencia_vertical, desenfoque, amplitud, color;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);    
+    position: relative; /*para cambiar el elemento X que se ve en actions*/
+    overflow: scroll;
+}
+
+/****Mobile*****/
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;        
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#1f4037;
+}
+th{
+    display: none;
+}
+/***************/
+
+/* posicionar la X*/
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+/* circulo para la X*/
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1f4037;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);    
+    font-weight: 300;
+    cursor: pointer;
+    display: flex; /*centrar*/
+    align-items: center; /*centrar*/
+    justify-content: center; /*centrar*/
+
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star{
+    color: #ffc400;
+}
+
+/*Estelizar tablas*/
+.table{
+    width: 100%;
+    border-spacing: 0 ;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #d5f8e7;
+}
+
+.title-item{
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #1f4037;*/
+    border-bottom: solid 2px #1f4037; /* shorthand properties*/
+    padding-bottom: 1em;
+    font-size: 1.7em;
+}
+
+.address{
+    font-weight: bold;
+    color:#1f4037;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 13em;    
+}
+
+image{
+    max-width: 100%;
+}
+
+.position{
+    background-color:#1f4037 ;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+/* Media Queries */
+@media (min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+
+}
+
+@media (max-width:600px){
+    
+}
+
+
+
