@@ -13,7 +13,11 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    
+    this.goHome = this.goHome.bind(this); //nunca pierda el componente
+  }
+
+  goHome(){
+      this.props.history.push('/');  //redireccionar al inicio
   }
 
 
@@ -22,7 +26,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div>
-          <MyAppBar/>
+          <MyAppBar goHome={this.goHome}/>
           <TransitionGroup>
             <CSSTransition classNames='left-out' timeout={300} 
             key={this.props.location.pathname.split('/')[1]}>
