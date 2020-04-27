@@ -32,4 +32,21 @@
 
 4. Click en **Restart** cuando finalice.
 
+# Crear un nuevo template
+
+1. En Android Studio seleccionar _Start a new Flutter project_
+
+![new Flutter project](images/proyecto1/new_Flutter_project.PNG)
+
+
+2. Seleccionar Flutter application
+
+![new Flutter application](images/proyecto1/Flutter_application.PNG)
+
+3. Definir el nombre del proyecto, la ubicación del SDK de Flutter _C:\src\Flutter_ y la ubicación del proyecto.
+
+![new Project name](images/proyecto1/Project_name.PNG)
+
+4. Colocar el nombre del paquete y **Finalizar**.
+
 
