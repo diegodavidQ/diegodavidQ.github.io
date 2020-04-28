@@ -129,5 +129,5 @@ class _State extends State<MyApp>{
 
 2. Ejecutar la App en dispositivo conectado.
 
-![emulacion](images/proyecto1/emulacion.jpg {height=350px})
+![emulacion](images/proyecto1/emulacion.jpg){:height="50%" width:"50%"}
 
