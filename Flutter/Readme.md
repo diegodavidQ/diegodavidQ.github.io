@@ -129,5 +129,5 @@ class _State extends State<MyApp>{
 
 2. Ejecutar la App en dispositivo conectado.
 
-<img src="images/proyecto1/emulacion.jpg" height="50%" align="Center">
+<img src="images/proyecto1/emulacion.jpg" height="500" align="Center">
 
